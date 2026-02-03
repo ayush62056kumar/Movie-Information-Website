@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Information Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🎬 Movie Information Website</h1>
+
+    <input type="text" id="movieName" placeholder="Enter movie name">
+    <button onclick="searchMovie()">Search</button>
+
+    <div id="movieResult"></div>
+    <h2>🕒 Recently Viewed</h2>
+<div id="recentMovies" class="grid"></div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+<!-- Movie Detail Modal -->
+<div id="movieModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImg">
+        <h2 id="modalTitle"></h2>
+        <p id="modalRating"></p>
+        <p id="modalYear"></p>
+        <p id="modalDesc"></p>
+    </div>
+</div>
+
+</body>
+</html>
+
+
